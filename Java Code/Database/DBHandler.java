@@ -11,6 +11,8 @@ public class DBHandler {
     public DBHandler()
     {
         try {
+            // set these values according the credentials you are using in your MySQL Workbench database //
+            // refer to "https://www.youtube.com/watch?v=e8g9eNnFpHQ" 6:30 onwards if you are still confused //
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/PMS", "root", "12345678");
 //            System.out.println("Connection made to DB");
         } catch (SQLException e) {
